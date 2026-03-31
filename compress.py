@@ -47,15 +47,14 @@ if __name__ == '__main__':
         'project':'runs/prune',
         'name':'yolov11_sgd_speedup1.6_nws_lamp_road_crack_test',
         
-
 #         'prune_method':'l1',
 #         'prune_method':'group_norm',    
-#         'prune_method':'slim',    'lamp'
+#         'prune_method':'lamp'
 
         'prune_method':'lamp',
         'global_pruning': True,
         'speed_up': 1.6,
-        'reg': 0.0008,  
+        'reg': 0.0005,  
         'sl_epochs': 400,  
         'sl_hyp': 'ultralytics/cfg/hyp.scratch.sl.yaml',
         'sl_model': None,
